@@ -24,6 +24,8 @@ title = 'marrani.lol'
     tabWidth = 4
 
 [params]
+  favicon = "favicon.ico"
   [params.theme_config]
+    show_description = true
     back_home_text = ".."
     date_format = "2006-01-02"

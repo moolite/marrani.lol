@@ -3,9 +3,11 @@
     {{- partial "head.html" . -}}
     <body a="{{ $.Site.Params.theme_config.appearance | default "auto" }}">
         <main class="page-content" aria-label="Content">
+          {{- partial "header.html" -}}
             <div class="w">
                 {{- block "main" . }}{{- end }}
             </div>
+          {{- partial "footer.html" -}}
         </main>
     </body>
 </html>

@@ -1,0 +1,58 @@
+
+{{- $posts := "" -}}
+
+{{- if .section -}}
+  {{- $posts = (where site.RegularPages "Section" .section) -}}
+{{- else -}}
+  {{- if (eq .context.Kind "taxonomy") -}}
+    {{- $posts = .context.Pages -}}
+  {{- else -}}
+    {{- if (eq .context.Kind "term") -}}
+      {{- $posts = .context.Data.Pages -}}
+    {{- else -}}
+      {{- $posts = site.RegularPages }}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if (gt (len $posts) 0) }}
+<ul>
+  {{- range $post := $posts -}}
+    <li>
+      {{ if (eq $post.Kind "post")}}
+        <span>{{- ($post.Date | time.Format site.Params.theme_config.date_format) }}</span>
+      {{ end }}
+
+      <a href="{{ $post.Permalink | relURL }}">{{ $post.Title }}</a>
+
+
+      {{- if $post.Pages -}}
+        <ul>
+        {{- range $post.Pages -}}
+          {{- if (eq .Kind "section") -}}
+
+            {{- range .Pages -}}
+              {{ if (eq .Kind "page")}}
+                <li>
+                  <span>{{- ($post.Date | time.Format site.Params.theme_config.date_format) }}</span>
+                  <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
+                </li>
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+
+          {{- if (eq .Kind "page") -}}
+            <li>
+              <span>{{- (.Date | time.Format site.Params.theme_config.date_format) }}</span>
+              <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
+            </li>
+          {{- end -}}
+
+        {{- end -}}
+        </ul>
+      {{- end -}}
+    </li>
+
+  {{- end -}}
+  </ul>
+  {{- end -}}

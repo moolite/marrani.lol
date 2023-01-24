@@ -9,23 +9,31 @@ title = "info"
   url = "https://github.com/moolite/marrani.lol"
 
 [[entries]]
-title = "Tutti i posts"
-
-  [entries.post_list]
+  [[entries.post_list]]
   limit = 5
-  show_more = true
-  show_more_text = "Archivio"
-  show_more_url = "posts"
-
-[[entries]]
-title = "post per categoria"
-
-  [entries.post_list]
   section = "posts"
   show_more = true
-  show_more_text = "Guarda pi&ugrave; post..."
-  show_more_url = "posts"
+  show_more_text = "Archivio"
+  show_more_url = "/posts"
+
+  [[entries.post_list]]
+  limit = 5
+  section = "amiga"
+  show_more = true
+  show_more_text = "DOCS:"
+  show_more_url = "/amiga"
+
+  [[entries.post_list]]
+  limit = 5
+  section = "msdos"
+  show_more = true
+  show_more_text = "D:"
+  show_more_url = "/amiga"
 
 [[entries]]
-title = "rss"
-url = "index.xml"
+  title = "tag"
+  url = "/tags/"
+
+[[entries]]
+  title = "rss"
+  url = "/index.xml"
