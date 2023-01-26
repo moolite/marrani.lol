@@ -1,3 +1,50 @@
+/* 
+Amiga-like Colors
+#b5b2b5 - bg grey
+#6b8ec6 - primary blue
+#450e45 - Kickstart background color 
+#f2a788 - Kickstart text and floppy drive color
+#f72000 - Guru meditation error Red
+#f7ae00 - Guru Orange
+#f7ee00 - Guru Yellow
+#5cfc0d - Guru Green
+*/
+$grey: #b5b2b5;
+$blue: #6b8ec6;
+$kick_bg: #450e45;
+$kick_tt: #f2a788;
+$guru_red: #f72000;
+$guru_orange: #f7ae00;
+$guru_yellow: #f7ee00;
+$guru_green: #5cfc0d;
+// --
+$black: #0a0a0a;
+$white: #fefefe;
+
+// DOS font
+@font-face {
+  font-family: "PerfectDOS";
+  src: url("/css/PerfectDOSVGA437Win.woff") format('woff');
+}
+@font-face {
+  font-family: "PerfectDOS";
+  src: url("/font/PerfectDOSVGA437Win.woff2") format('woff2');
+}
+body {
+  font-smooth: none;
+  -webkit-font-smoothing : none;
+  filter: contrast(1);
+}
+
+// $font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+@font-face {
+  font-family: "Pixellari";
+  src: url("/font/Pixellari.woff2") format("woff2");
+}
+
+$font-family: PerfectDOS, Pixellari, monospace;
+
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
   filter: invert(1);
@@ -19,14 +66,16 @@ body[a="dark"] { @include dark-appearance; }
 // bg color is also needed in html in order to
 // block body's background propagation
 // see: https://stackoverflow.com/a/61265706
-html, body { background: white; }
+html, body {
+  background: $white;
+}
 
 html { height: 100%; }
 
 body {
-  color: black;
-  font-family: monospace;
-  font-size: 16px;
+  color: $black;
+  font-family: $font-family;
+  font-size: 18px;
   line-height: 1.4;
   margin: 0;
   min-height: 100%;
@@ -73,8 +122,8 @@ table, th, td {
 }
 
 code {
-  color: white;
-  background: black;
+  color: $white;
+  background: $black;
   font-size: 80%;
   padding: 0.1em 0.2em;
   font-size: 90%;
@@ -105,3 +154,8 @@ figcaption {
   text-align: center;
   opacity: 0.5;
 }
+
+a { color: $guru_orange; }
+a:visited { color: $guru_green; }
+a:hover { color: $guru_red; }
+

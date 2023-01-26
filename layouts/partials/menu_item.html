@@ -19,7 +19,7 @@
 
         {{- if $item.post_list -}}
           {{- range $post_list := $item.post_list -}}
-            <li>{{ $post_list.section }}</li>
+            <li>{{ $post_list.title | default $post_list.section }}</li>
             {{ partial "post_list.html" (dict
                 "context" .
                 "section" $post_list.section
