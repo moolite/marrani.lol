@@ -32,12 +32,15 @@ $pixel-font-family: "Pixellari", monospace;
 
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
-  filter: invert(1);
-  img {
-    filter: invert(1);
+  // filter: invert(1);
+  // img {
+  //   filter: invert(1);
 
-    &.ioda { filter: invert(0); }
-  }
+  //   &.ioda { filter: invert(0); }
+  // }
+
+  color: $white;
+  background-color: $black;
 }
 
 body[a="dark"] { @include dark-appearance; }
