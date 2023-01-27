@@ -33,7 +33,7 @@
     </li>
     {{ end }}
     {{- if and .show_more $limit_exceeded }}
-    <li><a href="{{ .show_more_url | relURL }}">{{ .show_more_text | default "Show more..." }}</a></li>
+    <li><a class="pixel" href="{{ .show_more_url | relURL }}">{{ .show_more_text | default "Show more..." }}</a></li>
     {{ end }}
   </ul>
 {{ end }}

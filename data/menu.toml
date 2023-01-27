@@ -34,7 +34,7 @@ title = "info"
   show_more_url = "/msdos"
 
 [[entries]]
-  title = "tag"
+  title = "sitemap"
   url = "/tags/"
 
 [[entries]]

@@ -5,7 +5,7 @@
             {{- with $item.url -}}
                 <a href="{{ $item.url | relURL }}">{{ safeHTML $item.title }}</a>
             {{- else -}}
-                {{ safeHTML $item.title }}
+                <span class="pixel">{{ safeHTML $item.title }}</span>
             {{- end -}}
         </li>
         {{- end -}}
@@ -19,7 +19,7 @@
 
         {{- if $item.post_list -}}
           {{- range $post_list := $item.post_list -}}
-            <li>{{ $post_list.title | default $post_list.section }}</li>
+            <li><span class="pixel">{{ $post_list.title | default $post_list.section }}</span></li>
             {{ partial "post_list.html" (dict
                 "context" .
                 "section" $post_list.section

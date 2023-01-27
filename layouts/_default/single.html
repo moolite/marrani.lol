@@ -15,7 +15,7 @@
 
 {{ if (.GetTerms "tags") }}
   <h3>Tags</h3>
-  <ul>
+  <ul class="tags">
       {{ range (.GetTerms "tags") }}
           <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
       {{ end }}
