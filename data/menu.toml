@@ -27,7 +27,7 @@ title = "info"
   section = "msdos"
   title = "C:>"
   show_more = true
-  show_more_text = "D:\\ARCHIVE"
+  show_more_text = "C:\\ARCHIVE"
   show_more_url = "/msdos"
 
 [[entries]]
