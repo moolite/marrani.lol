@@ -2,9 +2,6 @@
 title = "info"
 
   [[entries.entries]]
-  title = "A very marrano blog"
-
-  [[entries.entries]]
   title = "github repo"
   url = "https://github.com/moolite/marrani.lol"
 
@@ -19,7 +16,7 @@ title = "info"
 
   [[entries.post_list]]
   limit = 5
-  title = "WORKBENCH:"
+  title = "Amiga"
   section = "amiga"
   show_more = true
   show_more_text = "DOCS:"

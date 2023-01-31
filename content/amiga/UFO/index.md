@@ -27,9 +27,9 @@ aaand some nices:
 
 - Yes, os friendly games are slower.. buuuut it's nice to have it running in its own swappable/draggable screen. It's a multitasking OS, 'kay?
 
-Other than that the game is exactly the same (it does even split the land combat in another executable like msdos version) and it's much fun. Been playing it on FS-UAE with a speedy 68040 non JIT configuration (altough i can use JIT with rosettaed x64 version im using arm64 binary with no JIT) with my supa AmigaOS 3.2.1 16GiB RDB hard disk image.
+Other than that the game is exactly the same (it does even split the land combat in another executable like msdos version) and it's much fun. Been playing it on FS-UAE with a speedy 68040 non JIT configuration (no JIT yet for ARM64) with my supa AmigaOS 3.2.1 16GiB RDB hard disk image.
 
-Unfortunately the installation script for Amiga Installer doesn't work on never AmigaOS versions but you can make the game work nicely by coping all floppies in a directory and then assigning IconX as default too to UFO_HD script like dat:
+Unfortunately the installation script for Amiga Installer doesn't work on never AmigaOS versions but you can let the game work nicely by coping all floppies in a directory (copy all from shell) and then creating an icon for UFO_HD script and finally by assigning IconX as default tool, like 'dat:
 
 ![](./iconx.png)
 
