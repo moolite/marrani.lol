@@ -19,7 +19,7 @@ title = "info"
   title = "Amiga"
   section = "amiga"
   show_more = true
-  show_more_text = "DOCS:"
+  show_more_text = "MOAR:"
   show_more_url = "/amiga"
 
   [[entries.post_list]]
