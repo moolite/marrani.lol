@@ -1,0 +1,6 @@
+<video
+    {{ with .Get "controls" }}controls{{ end }}
+    {{ with .Get "loop" }}loop{{ end }}
+    {{ with .Get "autoplay" }}autoplay{{ end }}>
+  <source src="{{ .Get "src" }}" type="video/webm">
+</video>
