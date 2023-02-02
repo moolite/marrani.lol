@@ -49,6 +49,6 @@ Soooo, launched FBlit from limited startup sequence and UFO worked. Why didn't i
 
 On emulated 68040 with FS-UAE (140K dhrystone in SysInfo) the game is indeed much smoother than without using FBlit which is really nice.
 
-Can't really wait to try it on my true 68060.
+Curious to run it on my real 68060/50Mhz and JITed version of FS-UAE (for now the x64 version since ARM64 one doesn't yet support JIT acceleration).
 
 {{< mOoNsHaDo >}}
