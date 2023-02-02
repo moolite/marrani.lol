@@ -3,7 +3,6 @@ title: "Ufo AGA"
 date: 2023-01-29T09:07:57+01:00
 draft: false
 tags:
-- amiga
 - retro
 - msdos
 ---
