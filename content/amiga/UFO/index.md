@@ -32,7 +32,7 @@ Other than that the game is exactly the same (it does even split the land combat
 
 On a real Amiga 1200, with a 68030, the game is still very playable, speed is quite OK, altough i remember (haven't tried lately so don't take my word for it) it being real slow on a base A1200 without fastram (makes kinda sense).
 
-Unfortunately the installation script for Amiga Installer doesn't work on never AmigaOS but you can make the game work nicely by coping all floppies in a directory (copy all from shell is enough, and ... makedir game saves directories....) and then creating an icon for UFO_HD script and finally by assigning IconX as default tool, like 'dat:
+Unfortunately the installation script for Amiga Installer doesn't work on never AmigaOS but you can make the game work nicely by copying all floppies in a directory (copy all from shell is enough, and ... makedir game saves directories....) and then creating an icon for UFO_HD script and finally by assigning IconX as default tool, like 'dat:
 
 ![](./iconx.png)
 
