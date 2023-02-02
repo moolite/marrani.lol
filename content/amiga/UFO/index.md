@@ -3,6 +3,7 @@ title: "Ufo AGA"
 date: 2023-01-29T09:07:57+01:00
 draft: false
 tags:
+- amiga
 - retro
 - msdos
 ---
@@ -46,7 +47,7 @@ The game looks for suitable screenmodes to open its screen: it looks for a 320x2
 
 Soooo, launched FBlit from limited startup sequence and UFO worked. Why didn't it work with my full startup sequence ? Seems it didn't work because of some changes in default FBlit configuration (i have an hunch that if you use FBlitGUI and save at first open without touching anything the configuration is different from FBlit's internal default configuration). After deleting FBlit.cfg from ENV: the game started fine. 
 
-On emulated 68040 with FS-UAE (140K dhrystone in SysInfo) the game is indeed much smoother than without using FBlit which is really nice. Funnily enough, FBlit seems to do some weird high level buffer swapping because when you run UFO with FBlit some sound effects are swapped with others :)
+On emulated 68040 with FS-UAE (140K dhrystone in SysInfo) the game is indeed much smoother than without using FBlit which is really nice. Funnily enough, FBlit seems to do some weird high level buffer swapping because when you run UFO with it some sound effects are swapped with others :)
 
 Curious to run it on my real 68060/50Mhz and JITed version of FS-UAE (for now the x64 version).
 
