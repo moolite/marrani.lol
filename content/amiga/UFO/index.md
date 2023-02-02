@@ -33,15 +33,15 @@ Other than that the game is exactly the same (it does even split the land combat
 
 On a real Amiga 1200, with a 68030, the game is still very playable, speed is quite OK, altough i remember (haven't tried lately so don't take my word for it) it being real slow on a base A1200 without fastram (makes kinda sense).
 
-Unfortunately the installation script for Amiga Installer doesn't work on never AmigaOS but you can make the game work nicely by copying all floppies in a directory (copy all from shell is enough, and ... makedir game saves directories....) and then creating an icon for UFO_HD script and finally by assigning IconX as default tool, like 'dat:
+Unfortunately the installation script for Amiga Installer doesn't work on never AmigaOS but you can make the game work nicely by copying all floppies in a directory (copy all from shell is enough and ... makedir game saves directories....) and then creating an icon for UFO_HD script and finally by assigning IconX as default tool, like 'dat:
 
 ![](./iconx.png)
 
 # Fun hacky notes
 
-Since UFO is a wb game using OS calls to draw it seemed fun to me to try accelerate it with FBlit. FBlit is a little utility to allow fast CPUs to substitute the Blitter in drawing because the Blitter is one of the components that C= [phuck you old C= :(] never updated so later CPUs are quite much faster in drawing in every aspect. I've been trying this on my real A1200 but to no avail.
+Since UFO is a wb game using OS calls to draw it seemed fun to me to try accelerate it with FBlit. FBlit is a little utility to allow fast CPUs to substitute the Blitter in drawing because the Blitter is one of the components that C= [phuck you old C= :(] never updated so later CPUs are much faster even in messing directly with bitmap graphics. I've been trying this on my real A1200 but to no avail.
 
-Sooo, i rebooted and tried to load the game with 'boot without startup sequence' in Early boot menu, lauched the game which complained it couldn't find any suitable screenmode. Makes sense. It's SetPatch which enables AGA screenmodes (game needs an 8 bitplane screen) and i didn't run it. So, launched SetPatch and the game indeed started. 
+Sooo, i debugged the startup sequence with 'boot without startup sequence' in Early boot menu, lauched the game which complained it couldn't find any suitable screenmode. Makes sense. It's SetPatch which enables AGA screenmodes (game needs an 8 bitplane screen) and i didn't run it. So, launched SetPatch and the game indeed started. 
 
 The game looks for suitable screenmodes to open its screen: it looks for a 320x200 mode preferring NTSC 320x200 (the one which NTSC monitor file adds to the system if you have a PAL Amiga) but it can also use DBLNTSC if NTSC is not available (had it using even EURO36 in FS-UAE), falling back to PAL if none of the above is found but with PAL you will have a 56 pixel high black lower part of the screen because the game is really 320x200 anyway. Fortunately since ECS chipset was made screenmodes are configurable so it matters less if your system is PAL or NTSC (the only difference is how the system chooses its first screenmode at boot time). In my case i have a BenQ BL912 which can sync, provided you use VGAOnly too in devs/monitors (VGAOnly augments a bit horizontal and vertical refresh rates to be more compatible with later VGA monitors), any resolution/monitor file AmigaOS 3.x provides so i can run the game in NTSC without any black border (well, only with default black borders since the game is not overscan).
 
