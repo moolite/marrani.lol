@@ -9,7 +9,7 @@ tags:
 ---
 # They have come, and they are not friendly
 
-One of the best retrogames ever made is UFO: Enemy Unknown, a.k.a. XCOM / Ufo Defense. I have been (re)playing it a lot over the years but i always used the MS-DOS version (while our l0ve for Amiga is the strongest we at marrani are multiplatform retrogamers. Resistence is futile! All your pixels belong to us!). This time i decided to try the Amiga/AGA version which i knew to be slower compared to the MSDOS version since it's in 256 colors and the AGA chipset is not really known for speed, especially with an os friendly game (banging the chipset is faster, mkay?).
+One of the best game ever made is UFO: Enemy Unknown, a.k.a. XCOM / Ufo Defense. I have been (re)playing it a lot over the years but i always used the MS-DOS version (while our l0ve for Amiga is the strongest we at marrani are multiplatform retrogamers. Resistence is futile! All your pixels belong to us!). This time i decided to try the Amiga/AGA version which i knew to be slower compared to the MSDOS version since it's in 256 colors and the AGA chipset is not really known for speed, especially with an os friendly game (banging the chipset is faster, mkay?).
 
 This version has some shortcomings, especially in land combat phase:
 
