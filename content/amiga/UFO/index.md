@@ -21,7 +21,7 @@ This version has some shortcomings, especially in land combat phase:
 
 - No faster walking settings, whyyyyyyy ? Because of AGA slowness?
 
-and some bugs, but no crashes - yet - though. While MSDOS version has crashed to me even producing non playable "it will always crash when event x occours" saves.
+and some bugs, but no crashes - yet - though. While MSDOS version has crashed to me even producing non playable "it will always crash when event x occurs" saves.
 
 But also some nices:
 
@@ -29,9 +29,9 @@ But also some nices:
 
 - Yes, os friendly games are slower.. buuuut it's nice to have it running in its own swappable/draggable screen. It's a multitasking OS, 'kay?
 
-Other than that the game is exactly the same (it does even split the land combat in another executable like msdos version) and it's much fun. Been playing it on FS-UAE with a speedy 68040 non JIT configuration (no JIT yet for ARM64) with my supa AmigaOS 3.2.1 16GiB RDB hard disk image.
+Other than that the game is exactly the same (it does even split the land combat in another executable like MSDOS version) and it's much fun. Been playing it on FS-UAE with a speedy 68040 non JIT configuration (no JIT yet for ARM64) with my supa AmigaOS 3.2.1 16GiB RDB hard disk image.
 
-On a real Amiga 1200, with a 68030, the game is still very playable, speed is quite OK, altough i remember (haven't tried lately so don't take my words for it) it being real slow on a base A1200 without fastram (makes kinda sense).
+On a real Amiga 1200, with a 68030, the game is still very playable, speed is quite OK, altough i remember (haven't tried lately so don't take my word for it) it being real slow on a base A1200 without fastram (makes kinda sense).
 
 Unfortunately the installation script for Amiga Installer doesn't work on never AmigaOS but you can make the game work nicely by coping all floppies in a directory (copy all from shell is enough) and then creating an icon for UFO_HD script and finally by assigning IconX as default tool, like 'dat:
 
