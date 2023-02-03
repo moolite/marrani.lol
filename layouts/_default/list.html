@@ -1,8 +1,46 @@
-{{ define "main" }}
-{{ partial "back_link.html" .}}
+{{ define "main"}}
 
-<h1>{{ .Title }}</h1>
+{{ $pageType := .Type }}
+
+{{ if (eq $pageType "tags") }}
+  {{ with .Data.Term }}
+    <h1 class="page-title">{{ i18n "tagList" 1 }}: "{{ . }}"</h1>
+  {{ else }}
+    <h1 class="page-title">{{ i18n "tagList" 2 }}</h1>
+  {{ end }}
+{{ else }}
+  <h1 class="page-title">{{ i18n "allArticles" .Section }}</h1>
+{{ end }}
 
 {{ .Content }}
-{{ partial "item_list.html" (dict "context" . "section" .Section)}}
+
+{{ range .Pages.GroupByDate "2006" }}
+  <h2>{{ .Key }}</h2>
+
+  <ul class="{{ $pageType }} post-list">
+
+  {{ range (sort .Pages "Date" "desc") }}
+
+    <li class="{{ $pageType }} post-item">
+
+      {{ if (not (or (eq $pageType "tags") (eq $pageType "section"))) }}
+        <time datetime="{{ time .Date }}" itemprop="datePublished">
+          {{- .Date.Format (.Site.Params.date_format | default "2006-01-02") -}}
+        </time>
+      {{ end }}
+
+      <a href="{{ .Permalink }}">
+        {{- .Title |default "Untitled" -}}{{- if .Draft }} <i class="draft">&#x203c;</i>{{ end -}}
+      </a>
+
+      {{ if (not (or (eq $pageType "tags") (eq $pageType "section"))) }}
+        {{ partial "tags.html" . }}
+      {{ end }}
+
+    </li>
+  {{ end }}
+  </ul>
+
+{{ end }}
+
 {{ end }}

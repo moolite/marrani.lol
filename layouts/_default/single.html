@@ -1,26 +1,34 @@
 {{ define "main" }}
-{{ partial "back_link.html" .}}
+
+  <section class="post-meta">
+    <time datetime="{{ .Date }}"  itemprop="datePublished">{{
+      .Date | time.Format site.Params.date_format }}</time>
+
+    <i class="time-to-read"
+        >{{ i18n "readingTime" (dict "Count" .ReadingTime) }}</i>
+
+    {{ partial "tags.html" . }}
+  </section>
 
   <article>
-      <p class="post-meta">
-          <time datetime="{{ .Date }}">
-              {{ .Date | time.Format site.Params.theme_config.date_format }}
-          </time>
-      </p>
 
       <h1>{{ .Title }}</h1>
 
       {{ .Content }}
   </article>
 
-  {{ if (.GetTerms "tags") }}
-    <h3>Tags</h3>
-    <ul class="tags">
-        {{ range (.GetTerms "tags") }}
-            <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-        {{ end }}
+  <section class="translations">
+    {{ if .IsTranslated }}
+    <h4>{{ i18n "translations" }}</h4>
+    <ul>
+      {{ range .Translations }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Lang | upper }}: {{ .Title }}{{ if .IsPage }} <i>{{ i18n "readingTime" .ReadingTime }}</i>{{ end }}</a>
+      </li>
+      {{ end }}
     </ul>
-  {{ end }}
+    {{ end }}
+  </section>
 
   {{ partial "comments.html" . }}
 {{ end }}

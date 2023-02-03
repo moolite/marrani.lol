@@ -6,5 +6,7 @@ tags:
 - munne
 - gatto
 - lukke
+- blog
+- post
 ---
 Ummmeee

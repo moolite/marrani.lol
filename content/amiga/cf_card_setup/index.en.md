@@ -1,20 +1,21 @@
 ---
-title: "Workbench: note di setup"
+title: "Workbench: my setup notes"
 draft: false
 date: 2023-01-27
-description: "Note di setup per Workbench"
+description: "Simple setup notes to setup a new Workbench"
 tags:
+- amiga
 - workbench
 ---
 
 ## PFS
 
-[PFS3 All-In-One][pfs-aio], il migliore filesystem per Amiga.  
+[PFS3 All-In-One][pfs-aio], the best Amiga filesystem to date.  
 [Aminet][aminet]: [disk/misc/pfs3aio.lha][pfs-aminet]
 
-### Impostazioni di `HDToolbox`
+### `HDToolbox` Icon settings
 
-Iserire un nuovo filesystem
+Insert a new filesystem using the menu
 
 ![](./hdtoolbox_pfs.png)
 
@@ -22,19 +23,19 @@ Iserire un nuovo filesystem
 
 ![](./hdtoolbox_pfs_file.png)
 
-ID del Filesystem:
+Set the right filesystem ID:
 
     0x50465303
 
 ![](./hdtoolbox_pfs_settings.png)
 
-Impostazioni della partizione:
+Setup a new partition with the right buffer size (we should have plenty of fast ram, no need to go small):
 
 - Buffers: `300`
 
 ![](./hdtoolbox_bootpart.png)
 
-- MaxTransfer: `0x1FE00`, importante solo per Amiga 600/1200
+- MaxTransfer: `0x1FE00` (apparently only useful for for Amiga 600/1200 IDE controllers)
 
 ![](./hdtoolbox_maxTransfer.png)
 

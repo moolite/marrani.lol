@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Pixellari";
+  src: local('Pixellari'),
+       url("/fonts/Pixellari.woff2") format("woff2"),
+       url('/fonts/Pixellari.woff') format('woff');
+};
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Mono';
+  font-style: bold;
+  font-weight: 800;
+  src: local('IBM Plex Mono Bold'), local('IBMPlexMono-Bold'),
+       url('../fonts/IBMPlexMono-Bold.woff2') format('woff2'),
+       url('../fonts/IBMPlexMono-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  src: local('IBM Plex Mono Regular'),
+       local('IBMPlexMono-Regular'),
+       url('../fonts/IBMPlexMono-Regular.woff2') format('woff2'),
+       url('../fonts/IBMPlexMono-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Mono';
+  font-style: italic;
+  font-weight: 500;
+  src: local('IBM Plex Mono Medium Italic'),
+       local('IBMPlexMono-MediumItalic'),
+       url('../fonts/IBMPlexMono-Italic.woff2') format('woff2'),
+       url('../fonts/IBMPlexMono-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Sans';
+  font-style: bold;
+  font-weight: 800;
+  src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'),
+       url('../fonts/IBMPlexSans-Bold.woff2') format('woff2'),
+       url('../fonts/IBMPlexSans-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('IBM Plex Sans Regular'),
+       local('IBMPlexSans-Regular'),
+       url('../fonts/IBMPlexSans-Regular.woff2') format('woff2'),
+       url('../fonts/IBMPlexSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 500;
+  src: local('IBM Plex Sans Medium Italic'),
+       local('IBMPlexSans-MediumItalic'),
+       url('../fonts/IBMPlexSans-Italic.woff2') format('woff2'),
+       url('../fonts/IBMPlexSans-Italic.woff') format('woff');
+}
