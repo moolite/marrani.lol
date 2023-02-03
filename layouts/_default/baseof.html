@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode }}">
     {{- partial "head.html" . -}}
-    <body a="{{ $.Site.Params.theme_config.appearance | default "auto" }}">
+    <body>
         <main class="page-content" aria-label="Content">
-          {{- partial "header.html" -}}
             <div class="w">
-                {{- block "main" . }}{{- end }}
+              {{- partial "breadcrumb.html" . -}}
+              {{- partial "header.html" . -}}
+
+              {{- block "main" . }}{{- end }}
+              {{- partial "footer.html" -}}
             </div>
-          {{- partial "footer.html" -}}
         </main>
     </body>
 </html>

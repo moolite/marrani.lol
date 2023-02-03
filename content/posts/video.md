@@ -2,6 +2,9 @@
 title: video
 date: 2023-02-01
 draft: true
+tags:
+- blog
+- test
 ---
 
 ## Simple

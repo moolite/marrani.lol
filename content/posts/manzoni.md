@@ -2,6 +2,9 @@
 title: moonzoni
 date: 2023-01-26
 draft: true
+tags:
+- blog
+- post
 ---
 
 Quel ramo del lago di Como, che volge a mezzogiorno, tra due catene non interrotte di monti, tutte a seni e a golfi, a seconda dello sporgere e del rientrare di quelli, vien, quasi a un tratto, a ristringersi, e a prender corso e figura di fiume, tra un promontorio a destra, e un’ampia costiera dall’altra parte; e il ponte, che ivi congiunge le due rive, par che renda ancor più sensibile all’occhio questa trasformazione, e segni il punto in cui il lago cessa, e l’Adda rincomincia, per ripigliar poi nome di lago dove le rive, allontanandosi di nuovo, lascian l’acqua distendersi e rallentarsi in nuovi golfi e in nuovi seni.

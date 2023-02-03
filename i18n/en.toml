@@ -1,0 +1,13 @@
+[tagList]
+  one = "tag"
+  other = "tag list"
+
+[translations]
+  other = "Translations"
+
+[readingTime]
+  one = 'One minute to read'
+  other = 'a {{.Count}} minutes read'
+
+[allArticles]
+  other = "All articles in {{ . }} section"

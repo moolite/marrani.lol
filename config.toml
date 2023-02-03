@@ -1,31 +1,24 @@
 baseURL = 'https://marrani.lol/'
-languageCode = 'it-IT'
 title = 'marrani.lol'
+copyright = 'marrani.lol'
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.parser]
-      [markup.goldmark.parser.attribute]
-        block = true
-        title = true
-  [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ''
-    hl_inline = false
-    lineAnchors = ''
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    noHl = false
-    style = 'rrt'
-    tabWidth = 4
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.en]
+  weight = 1
+  languageCode = 'en-US'
+  languageName = 'English'
+  languageNameShort = 'en'
+  [languages.it]
+  weight = 2
+  languageCode = 'it-IT'
+  languageName = 'Italiano'
+  languageNameShort = 'it'
+
 
 [params]
   favicon = "favicon.ico"
-  [params.theme_config]
-    show_description = true
-    back_home_text = ".."
-    date_format = "2006-01-02"
+  date_format = "2006-01-02"
+  description = "Resistence is futile! All your pixels belong to us!"
