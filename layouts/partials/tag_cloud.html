@@ -1,12 +1,12 @@
 <div class="tagcloud">
   {{ $AllRegularPagesCount := len .Site.RegularPages }}
-  {{ range $elem := .Site.Taxonomies.tags.Alphabetical }}
-  <div class="tag">
-    <a style="font-size: {{
-              (add 0.5 (mul 3 (div (float $elem.Count) $AllRegularPagesCount)))
-              }}rem;"
-       href="{{ $elem.Page.Permalink }}">
-    {{- .Page.Title -}}
-  </a></div>
+  {{ range sort .Site.Taxonomies.tags.Alphabetical "Count" "desc" }}
+  <a class="tag" style="font-size: {{
+               (add 50 (div (mul 100 .Count)
+                             $AllRegularPagesCount))
+            }}%;"
+     href="{{ .Page.Permalink }}">
+  {{- .Page.Title -}}
+  </a>
   {{ end }}
 </div>
