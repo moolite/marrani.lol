@@ -6,6 +6,7 @@ tags:
 - amiga
 - retro
 - msdos
+- workbench
 ---
 # They have come, and they are not friendly
 
