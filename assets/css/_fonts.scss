@@ -1,70 +1,106 @@
 @font-face {
-  font-family: "Pixellari";
-  src: local('Pixellari'),
-       url("/fonts/Pixellari.woff2") format("woff2"),
-       url('/fonts/Pixellari.woff') format('woff');
+  font-family: "ZX Sierra Quest";
+  src: local('ZX Sierra Quest'),
+       url("/fonts/damieng/zx-sierra-quest.woff2") format("woff2"),
+       url('/fonts/damieng/zx-sierra-quest.woff') format('woff');
 };
 
 @font-face {
-  font-display: swap;
-  font-family: 'IBM Plex Mono';
-  font-style: bold;
-  font-weight: 800;
-  src: local('IBM Plex Mono Bold'), local('IBMPlexMono-Bold'),
-       url('../fonts/IBMPlexMono-Bold.woff2') format('woff2'),
-       url('../fonts/IBMPlexMono-Bold.woff') format('woff');
-}
+  font-family: "Anvil";
+  src: local('Anvil'),
+       url("/fonts/damieng/anvil.woff2") format("woff2"),
+       url('/fonts/damieng/anvil.woff') format('woff');
+};
 
 @font-face {
-  font-display: swap;
-  font-family: 'IBM Plex Mono';
+  font-family: "Anvil Alternate";
+  src: local('Anvil Alternate'),
+       url("/fonts/damieng/anvil-alternate.woff2") format("woff2"),
+       url('/fonts/damieng/anvil-alternate.woff') format('woff');
+};
+
+@font-face {
+  font-family: "Sorcery";
+  src: local('Sorcery'),
+       url("/fonts/damieng/sorcery.woff2") format("woff2"),
+       url('/fonts/damieng/sorcery.woff') format('woff');
+};
+
+@font-face {
+  font-family: "Noted";
+  src: local('Noted'),
+       url("/fonts/damieng/noted.woff2") format("woff2"),
+       url('/fonts/damieng/noted.woff') format('woff');
+};
+
+@font-face {
+  /* 12px */
+  font-family: Galmuri11;
   font-style: normal;
-  font-weight: 500;
-  src: local('IBM Plex Mono Regular'),
-       local('IBMPlexMono-Regular'),
-       url('../fonts/IBMPlexMono-Regular.woff2') format('woff2'),
-       url('../fonts/IBMPlexMono-Regular.woff') format('woff');
+  font-stretch: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Galmuri11 Regular'),
+       url('/fonts/galmuri/Galmuri11.woff2') format('woff2'),
+       url('/fonts/galmuri/Galmuri11.ttf') format('truetype');
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'IBM Plex Mono';
-  font-style: italic;
-  font-weight: 500;
-  src: local('IBM Plex Mono Medium Italic'),
-       local('IBMPlexMono-MediumItalic'),
-       url('../fonts/IBMPlexMono-Italic.woff2') format('woff2'),
-       url('../fonts/IBMPlexMono-Italic.woff') format('woff');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'IBM Plex Sans';
+  /* 12px */
+  font-family: Galmuri11;
   font-style: bold;
-  font-weight: 800;
-  src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'),
-       url('../fonts/IBMPlexSans-Bold.woff2') format('woff2'),
-       url('../fonts/IBMPlexSans-Bold.woff') format('woff');
+  font-stretch: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Galmuri11 Bold'),
+       url('/fonts/galmuri/Galmuri11-Bold.woff2') format('woff2'),
+       url('/fonts/galmuri/Galmuri11-Bold.ttf') format('truetype');
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'IBM Plex Sans';
+  /* 12px */
+  font-family: Galmuri11;
   font-style: normal;
-  font-weight: 500;
-  src: local('IBM Plex Sans Regular'),
-       local('IBMPlexSans-Regular'),
-       url('../fonts/IBMPlexSans-Regular.woff2') format('woff2'),
-       url('../fonts/IBMPlexSans-Regular.woff') format('woff');
+  font-stretch: condensed;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Galmuri11 Condensed'),
+       url('/fonts/galmuri/Galmuri11-Condensed.woff2') format('woff2'),
+       url('/fonts/galmuri/Galmuri11-Condensed.ttf') format('truetype');
 }
 
 @font-face {
+  /* 10px */
+  font-family: GalmuriMono9;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
   font-display: swap;
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 500;
-  src: local('IBM Plex Sans Medium Italic'),
-       local('IBMPlexSans-MediumItalic'),
-       url('../fonts/IBMPlexSans-Italic.woff2') format('woff2'),
-       url('../fonts/IBMPlexSans-Italic.woff') format('woff');
+  src: local('GalmuriMono9 Regular'),
+       url('/fonts/galmuri/GalmuriMono9.woff2') format('woff2'),
+       url('/fonts/galmuri/GalmuriMono9.ttf') format('truetype');
+}
+
+@font-face {
+  /* 10px */
+  font-family: GalmuriMono9;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 700; // hack to remove ugly bold-ing
+  font-display: swap;
+  src: local('GalmuriMono9 Regular'),
+       url('/fonts/galmuri/GalmuriMono9.woff2') format('woff2'),
+       url('/fonts/galmuri/GalmuriMono9.ttf') format('truetype');
+}
+
+@font-face {
+  /* 8px */
+  font-family: GalmuriMono7;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('GalmuriMono7 Regular'),
+       url('/fonts/galmuri/GalmuriMono7.woff2') format('woff2'),
+       url('/fonts/galmuri/GalmuriMono7.ttf') format('truetype');
 }

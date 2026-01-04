@@ -7,3 +7,4 @@ resources/_gen
 public/*
 logs/*
 /.hugo_build.lock
+node_modules

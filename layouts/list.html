@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{ .Content }}
+
+  <!-- divide post list by year  -->
+  {{ if  .Site.Params.group_by_date }}
+    {{ range .Pages.GroupByDate "2006 Year" }}
+      <p>{{ .Key }}</p>
+      <ul>
+        {{ range .Pages }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  {{ else }}
+    {{ partial "post_list.html" (dict "context" . "section" .Section)}}
+  {{ end }}
+
+{{ end }}

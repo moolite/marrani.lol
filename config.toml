@@ -2,23 +2,41 @@ baseURL = 'https://marrani.lol/'
 title = 'marrani.lol'
 copyright = 'marrani.lol'
 
-defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = true
+[markup.goldmark.renderer]
+  unsafe = true
 
-[languages]
-  [languages.en]
-  weight = 1
-  languageCode = 'en-US'
-  languageName = 'English'
-  languageNameShort = 'en'
-  [languages.it]
-  weight = 2
-  languageCode = 'it-IT'
-  languageName = 'Italiano'
-  languageNameShort = 'it'
+[markup.highlight]
+  anchorLineNos = false
+  codeFences = false
+  guessSyntax = false
+  hl_Lines = ''
+  hl_inline = false
+  lineAnchors = ''
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = false
+  style = 'bw'
+  tabWidth = 4
+  wrapperClass = 'highlight'
 
+[taxonomies]
+author = 'authors'
+tag = 'tags'
+
+[outputs]
+  home = ["html", "rss"]
+  posts = ["html", "rss"]
 
 [params]
   favicon = "favicon.ico"
-  date_format = "2006-01-02"
-  description = "Resistence is futile! All your pixels belong to us!"
+  date_format = "2006/01"
+  group_by_date = false
+  show_description = true
+  toc = true
+
+[sitemap]
+  changeFreq = ''
+  disable = false
+  filename = "sitemap.xml"
+  priority = -1

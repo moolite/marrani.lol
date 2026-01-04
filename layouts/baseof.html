@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode }}">
+	{{- partial "head.html" . -}}
+	<body>
+
+		<main>
+			<aside>
+				<header>{{- partial "header.html" . -}}</header>
+			</aside>
+
+			<section aria-label="Content">
+				{{- block "main" . }}{{- end }}
+			</section>
+
+			{{ partial "footer.html" . }}
+		</main>
+
+		{{ partial "svgnoise.svg" }}
+		{{ partial "scripts.html" }}
+
+	</body>
+</html>

@@ -1,39 +1,14 @@
 {{ define "main" }}
 
-<div class="sections">
-  {{ range site.Sections }}
-  <a href="{{ absLangURL .Permalink }}">{{ .Title }}</a>
+{{ .Content }}
+
+<ul class="tags">
+  {{ range .Site.Taxonomies.tags }}
+    <li><a data-count="{{.Count}}" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
   {{ end }}
-</div>
+</ul>
 
-{{ partial "tag_cloud.html" . }}
 
-{{ range (site.RegularPages.GroupByDate "2006") }}
-  <h2>{{ .Key }}</h2>
-  <ul class="post-list">
-  {{ range .Pages }}
-    <li class="post-item">
-      <time datetime="{{ time .Date }}" itemprop="datePublished">
-        {{- .Date.Format (.Site.Params.date_format | default "2006-01-02") -}}
-      </time>
-      <a href="{{ .Permalink }}">
-        {{- .Title |default "Untitled" -}}{{- if .Draft }} <i class="draft">&#x203c;</i>{{ end -}}
-      </a>
-
-      {{ partial "tags.html" . }}
-    </li>
-
-  {{ end }}
-  </ul>
-{{ end }}
-
-<section class="extras">
-    <h4>links | projects</h4>
-    <ul>
-      <li><a href="https://github.com/mOoNsHaDoOo/MarranoFTP-Amiga">MarranoFTP</a></li>
-      <li><a href="https://github.com/moolite/bot">@marrano_bot</a></li>
-      <li><a href="https://github.com/moolite/marrani.lol">site sources</a></li>
-    </ul>
-</section>
+{{ partial "post_list.html" (dict "context" . "section" .Section)}}
 
 {{ end }}

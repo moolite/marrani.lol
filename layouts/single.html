@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+  <article>
+    {{ if .Params.toc }}
+      <nav {{ if .Params.tocBorder }} class="toc" {{ end }}>
+        {{ .TableOfContents }}
+      </nav>
+    {{ end }}
+    {{ .Content }}
+  </article>
+
+  <div class="post-meta">
+    <time datetime="{{ .Date }}">
+      {{ .Date | time.Format site.Params.date_format }}
+    </time>
+    {{ partial "signature" . }}
+  </div>
+
+{{ end }}
