@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "ZX Sierra Quest";
+  src: local('ZX Sierra Quest'),
+       url("/fonts/damieng/zx-sierra-quest.woff2") format("woff2"),
+       url('/fonts/damieng/zx-sierra-quest.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Anvil";
+  font-style: normal;
+  font-stretch: normal;
+  src: local('Anvil'),
+       url("/fonts/damieng/anvil.woff2") format("woff2"),
+       url('/fonts/damieng/anvil.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Anvil Alternate";
+  font-style: normal;
+  font-stretch: normal;
+  src: local('Anvil Alternate'),
+       url("/fonts/damieng/anvil-alternate.woff2") format("woff2"),
+       url('/fonts/damieng/anvil-alternate.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Sorcery";
+  font-style: normal;
+  font-stretch: normal;
+  src: local('Sorcery'),
+       url("/fonts/damieng/sorcery.woff2") format("woff2"),
+       url('/fonts/damieng/sorcery.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Noted";
+  font-style: normal;
+  font-stretch: normal;
+  src: local('Noted'),
+       url("/fonts/damieng/noted.woff2") format("woff2"),
+       url('/fonts/damieng/noted.woff') format('woff');
+}
+
+@font-face {
+  /* 12px */
+  font-family: Galmuri11;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Galmuri11 Regular'),
+       url('/fonts/galmuri/Galmuri11.woff2') format('woff2'),
+       url('/fonts/galmuri/Galmuri11.ttf') format('truetype');
+}
+
+@font-face {
+  /* 12px */
+  font-family: Galmuri11;
+  font-style: bold;
+  font-stretch: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Galmuri11 Bold'),
+       url('/fonts/galmuri/Galmuri11-Bold.woff2') format('woff2'),
+       url('/fonts/galmuri/Galmuri11-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  /* 12px */
+  font-family: Galmuri11;
+  font-style: normal;
+  font-stretch: condensed;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Galmuri11 Condensed'),
+       url('/fonts/galmuri/Galmuri11-Condensed.woff2') format('woff2'),
+       url('/fonts/galmuri/Galmuri11-Condensed.ttf') format('truetype');
+}
+
+@font-face {
+  /* 10px */
+  font-family: GalmuriMono9;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('GalmuriMono9 Regular'),
+       url('/fonts/galmuri/GalmuriMono9.woff2') format('woff2'),
+       url('/fonts/galmuri/GalmuriMono9.ttf') format('truetype');
+}
+
+@font-face {
+  /* 10px */
+  font-family: GalmuriMono9;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 700; // hack to remove ugly bold-ing
+  font-display: swap;
+  src: local('GalmuriMono9 Regular'),
+       url('/fonts/galmuri/GalmuriMono9.woff2') format('woff2'),
+       url('/fonts/galmuri/GalmuriMono9.ttf') format('truetype');
+}
+
+@font-face {
+  /* 8px */
+  font-family: GalmuriMono7;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('GalmuriMono7 Regular'),
+       url('/fonts/galmuri/GalmuriMono7.woff2') format('woff2'),
+       url('/fonts/galmuri/GalmuriMono7.ttf') format('truetype');
+}

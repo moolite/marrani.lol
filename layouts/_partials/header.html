@@ -1,0 +1,24 @@
+{{ with .Title }}<h6><a href="{{ $.Permalink }}">{{ . }}</a></h6>{{ end }}
+
+{{- if $.Site.Params.show_description -}}
+  <quote>
+    Resistence is futile!<br>
+    All your pixels belong to us!
+  </quote>
+{{- end -}}
+
+
+<nav class="menu">
+  {{- range site.Menus.main }}
+    <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} href="{{ .URL }}">{{ .Name }}</a>
+  {{- end }}
+</nav>
+
+
+{{ with $.GetTerms "tags" }}
+  <nav class="tags">
+    {{ range . }}
+      <a class="tag" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
+    {{ end }}
+  </nav>
+{{ end }}

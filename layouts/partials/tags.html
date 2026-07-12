@@ -1,8 +1,0 @@
-{{/* Tag List */}}
-<section class="tag-list">
-  {{ if (.GetTerms "tags") }}
-      {{ range (.GetTerms "tags") }}
-          <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-      {{ end }}
-  {{ end }}
-</section>

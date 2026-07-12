@@ -1,0 +1,8 @@
+<svg id="noise" width='0' height='0' aria-hidden='true'>
+  <filter id='grain' color-interpolation-filters='sRGB'
+    x='0' y='0' width='1' height='1'>
+    <feTurbulence type='fractalNoise' baseFrequency='.9713' numOctaves='4'/>
+    <feDisplacementMap in='SourceGraphic' scale='150' xChannelSelector='R'/>
+    <feBlend in2='SourceGraphic'/>
+  </filter>
+</svg>
