@@ -40,3 +40,6 @@ tag = 'tags'
   disable = false
   filename = "sitemap.xml"
   priority = -1
+
+[minify]
+  minifyOutput = true
