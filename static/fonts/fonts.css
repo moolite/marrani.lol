@@ -3,35 +3,43 @@
   src: local('ZX Sierra Quest'),
        url("/fonts/damieng/zx-sierra-quest.woff2") format("woff2"),
        url('/fonts/damieng/zx-sierra-quest.woff') format('woff');
-};
+}
 
 @font-face {
   font-family: "Anvil";
+  font-style: normal;
+  font-stretch: normal;
   src: local('Anvil'),
        url("/fonts/damieng/anvil.woff2") format("woff2"),
        url('/fonts/damieng/anvil.woff') format('woff');
-};
+}
 
 @font-face {
   font-family: "Anvil Alternate";
+  font-style: normal;
+  font-stretch: normal;
   src: local('Anvil Alternate'),
        url("/fonts/damieng/anvil-alternate.woff2") format("woff2"),
        url('/fonts/damieng/anvil-alternate.woff') format('woff');
-};
+}
 
 @font-face {
   font-family: "Sorcery";
+  font-style: normal;
+  font-stretch: normal;
   src: local('Sorcery'),
        url("/fonts/damieng/sorcery.woff2") format("woff2"),
        url('/fonts/damieng/sorcery.woff') format('woff');
-};
+}
 
 @font-face {
   font-family: "Noted";
+  font-style: normal;
+  font-stretch: normal;
   src: local('Noted'),
        url("/fonts/damieng/noted.woff2") format("woff2"),
        url('/fonts/damieng/noted.woff') format('woff');
-};
+}
 
 @font-face {
   /* 12px */
