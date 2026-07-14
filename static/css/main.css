@@ -1,22 +1,23 @@
 @import "/fonts/fonts.css";
 
 :root {
-    --c0: #000000;
-    --c1: #626262;
-    --c2: #898989;
-    --c3: #adadad;
-    --c4: #ffffff;
-    --c5: #9f4e44;
-    --c6: #cb7e75;
-    --c7: #6d5412;
-    --c8: #a1683c;
-    --c9: #c9d487;
-    --ca: #9ae29b;
-    --cb: #5cab5e;
-    --cc: #6abfc6;
-    --cd: #887ecb;
-    --ce: #50459b;
-    --cf: #a057a3;
+    /* C64 (VIC-II) pepto palette */
+    --c0: #000000; /* black        */
+    --c1: #fefefe; /* white        */
+    --c2: #68372b; /* red          */
+    --c3: #70a4b2; /* cyan         */
+    --c4: #6f3d86; /* purple       */
+    --c5: #588d43; /* green        */
+    --c6: #352879; /* blue         */
+    --c7: #b8c76f; /* yellow       */
+    --c8: #6f4f25; /* orange       */
+    --c9: #433900; /* brown        */
+    --ca: #9a6759; /* light red    */
+    --cb: #444444; /* dark grey    */
+    --cc: #6c6c6c; /* grey         */
+    --cd: #9ad284; /* light green  */
+    --ce: #6c5eb5; /* light blue   */
+    --cf: #959595; /* light grey   */
 
     --font-normal: "TopazPlus", serif;
     --font-mono: Topaz, monospace;
@@ -37,13 +38,16 @@
     --border-radius: 4px;
     --yellow-highlight: var(--c9);
 
-    --background: var(--c3);
-    --background-main: var(--c3);
-    --background-alt: var(--c2);
-    --background-inputs: var(--c1);
-    --text: var(--c0);
+    --background: var(--c1);
+    --background-main: var(--cb);
+    --background-alt: var(--cf);
+    --background-inputs: var(--cf);
+    --text: var(--c9);
     --border: var(--c1);
     --links: var(--ce);
+    --links-visited: var(--c6);
+    --links-hover: var(--c4);
+    --links-active: var(--c6);
     --focus-highlight: var(--cf);
     --shadow-color: var(--c1);
     --shadow-box: 2px 2px 0px var(--border), -2px -2px 0px var(--border);
@@ -102,6 +106,23 @@ h6 {
 
 ul {
     list-style: square;
+}
+
+a {
+    color: var(--links);
+    text-decoration: underline;
+}
+a:visited {
+    color: var(--links-visited);
+}
+a:hover {
+    color: var(--links-hover);
+}
+a:active {
+    color: var(--links-active);
+}
+a:focus {
+    outline: 1px solid var(--focus-highlight);
 }
 
 /*
