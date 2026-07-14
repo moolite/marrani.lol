@@ -19,7 +19,7 @@
     --cf: #a057a3;
 
     --font-normal: "TopazPlus", serif;
-    --font-mono: GalmuriMono7, monospace;
+    --font-mono: Topaz, monospace;
     --font-pixel: "P0T-NOoDLE";
     --font-pixel-alt: "MicroKnightPlus";
     --font-pixel-cur: "Noted";
@@ -55,10 +55,22 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --background: var(--c0);
+        --background-main: var(--c2);
+        --background-alt: var(--c1);
+        --background-inputs: var(--c1);
+        --text: var(--c3);
+        --border: var(--c1);
+        --links: var(--ce);
+        --focus-highlight: var(--cf);
+        --shadow-color: var(--c1);
+        --shadow-box: 2px 2px 0px var(--border), -2px -2px 0px var(--border);
+        --table-highlight: var(--c4);
     }
 }
 
 body {
+    color: var(--text);
     font-family: var(--font-normal);
     font-size: var(--font-s-n);
     line-height: 1.6;
@@ -325,4 +337,22 @@ nav.tags a {
     to {
         visibility: hidden;
     }
+}
+
+/**/
+.ml-keyword {
+    text-shadow: 0 0 1px;
+    color: var(--ce);
+}
+.ml-regex,
+.ml-strings {
+    color: var(--c7);
+}
+.ml-comments {
+    font-style: italic;
+    font-weight: 300;
+    opacity: 0.6;
+}
+.ml-punctuation {
+    opacity: 0.6;
 }

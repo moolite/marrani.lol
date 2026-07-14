@@ -26,26 +26,6 @@
     microlighted,
     el; // current microlighted element to run through
 
-  var stylesheet = document.createElement("style");
-  stylesheet.textContent = `
-.ml-keyword {
-  text-shadow: 0 0 1px;
-  font-weight: bold;
-}
-.ml-regex, .ml-strings {
-  font-style: italic;
-}
-.ml-comments {
-  font-style: italic;
-  font-weight: 300;
-  opacity: 0.6;
-}
-.ml-punctuation {
-  opacity: 0.6;
-}
-`;
-  _document.head.appendChild(stylesheet);
-
   var reset = function (nodes) {
     // nodes to highlight
     microlighted = nodes || _document.querySelectorAll("pre>code");
