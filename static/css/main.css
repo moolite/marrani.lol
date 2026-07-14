@@ -18,15 +18,15 @@
     --ce: #50459b;
     --cf: #a057a3;
 
-    --font-normal: "Galmuri11", serif;
-    --font-mono: "GalmuriMono9", monospace;
-    --font-pixel: "Anvil";
-    --font-pixel-alt: "Anvil Alternate";
+    --font-normal: "TopazPlus", serif;
+    --font-mono: GalmuriMono7, monospace;
+    --font-pixel: "P0T-NOoDLE";
+    --font-pixel-alt: "MicroKnightPlus";
     --font-pixel-cur: "Noted";
     --font-pixel-sml: "ZX Sierra Quest";
 
-    --font-s-mono: 20px;
-    --font-s-s: 12px;
+    --font-s-mono: 13px;
+    --font-s-s: 9px;
     --font-s-n: calc(var(--font-s-s) * 2);
     --font-s-p-n: calc(10px * 2);
     --font-s-p-l: calc(10px * 2);
@@ -78,6 +78,14 @@ pre {
 
 h1 {
     font-family: var(--font-pixel);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-pixel-sml);
 }
 
 ul {
@@ -149,6 +157,9 @@ main section {
 /*        */
 /* HEADER */
 /*        */
+aside {
+    font-family: var(--font-pixel-alt);
+}
 nav.breadcrumbs ul {
     list-style-type: none;
     text-align: center;

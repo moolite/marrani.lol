@@ -1,114 +1,125 @@
 @font-face {
-  font-family: "ZX Sierra Quest";
-  src: local('ZX Sierra Quest'),
-       url("/fonts/damieng/zx-sierra-quest.woff2") format("woff2"),
-       url('/fonts/damieng/zx-sierra-quest.woff') format('woff');
+    font-family: "ZX Sierra Quest";
+    src:
+        local("ZX Sierra Quest"),
+        url("/fonts/damieng/zx-sierra-quest.woff2") format("woff2"),
+        url("/fonts/damieng/zx-sierra-quest.woff") format("woff");
+}
+
+/* @font-face { */
+/*     font-family: "Anvil"; */
+/*     font-style: normal; */
+/*     font-stretch: normal; */
+/*     src: */
+/*         local("Anvil"), */
+/*         url("/fonts/damieng/anvil.woff2") format("woff2"), */
+/*         url("/fonts/damieng/anvil.woff") format("woff"); */
+/* } */
+
+/* @font-face { */
+/*     font-family: "Anvil Alternate"; */
+/*     font-style: normal; */
+/*     font-stretch: normal; */
+/*     src: */
+/*         local("Anvil Alternate"), */
+/*         url("/fonts/damieng/anvil-alternate.woff2") format("woff2"), */
+/*         url("/fonts/damieng/anvil-alternate.woff") format("woff"); */
+/* } */
+
+/* @font-face { */
+/*     font-family: "Sorcery"; */
+/*     font-style: normal; */
+/*     font-stretch: normal; */
+/*     src: */
+/*         local("Sorcery"), */
+/*         url("/fonts/damieng/sorcery.woff2") format("woff2"), */
+/*         url("/fonts/damieng/sorcery.woff") format("woff"); */
+/* } */
+
+@font-face {
+    font-family: "Noted";
+    font-style: normal;
+    font-stretch: normal;
+    src:
+        local("Noted"),
+        url("/fonts/damieng/noted.woff2") format("woff2"),
+        url("/fonts/damieng/noted.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Anvil";
-  font-style: normal;
-  font-stretch: normal;
-  src: local('Anvil'),
-       url("/fonts/damieng/anvil.woff2") format("woff2"),
-       url('/fonts/damieng/anvil.woff') format('woff');
+    font-family: Musketeer;
+    font-display: swap;
+    src:
+        local("Musketeer"),
+        url("/fonts/pixelsagas/Musketeer.woff2") format("woff2"),
+        url("/fonts/pixelsagas/Musketeer.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Anvil Alternate";
-  font-style: normal;
-  font-stretch: normal;
-  src: local('Anvil Alternate'),
-       url("/fonts/damieng/anvil-alternate.woff2") format("woff2"),
-       url('/fonts/damieng/anvil-alternate.woff') format('woff');
+    font-family: Takhisis;
+    font-display: swap;
+    src:
+        local("Takhisis"),
+        url("/fonts/pixelsagas/Takhisis.woff2") format("woff2"),
+        url("/fonts/pixelsagas/Takhisis.otf") format("opentype");
+}
+
+/* Amigafonts */
+/**
+ * MicroKnightPlus_v1.0.ttf
+ * MicroKnight_v1.0.woff2
+ * mOsOul_v1.0.woff2
+ * P0T-NOoDLE_v1.0.ttf
+ * TopazPlus_a1200_v1.0.ttf
+ * TopazPlus_a500_v1.0.ttf
+ * Topaz_a1200_v1.0.ttf
+ * Topaz_a500_v1.0.ttf
+*/
+
+@font-face {
+    font-family: MicroKnight;
+    src:
+        local("MicroKnight"),
+        url("/fonts/amigafonts/MicroKnight_v1.0.woff2") format("woff2"),
+        url("/fonts/amigafonts/MicroKnight_v1.0.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Sorcery";
-  font-style: normal;
-  font-stretch: normal;
-  src: local('Sorcery'),
-       url("/fonts/damieng/sorcery.woff2") format("woff2"),
-       url('/fonts/damieng/sorcery.woff') format('woff');
+    font-family: MicroKnightPlus;
+    src:
+        local("MicroKnight"),
+        url("/fonts/amigafonts/MicroKnightPlus_v1.0.woff2") format("woff2"),
+        url("/fonts/amigafonts/MicroKnightPlus_v1.0.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Noted";
-  font-style: normal;
-  font-stretch: normal;
-  src: local('Noted'),
-       url("/fonts/damieng/noted.woff2") format("woff2"),
-       url('/fonts/damieng/noted.woff') format('woff');
+    font-family: mOsOul;
+    src:
+        local("mOsOul"),
+        url("/fonts/amigafonts/mOsOul_v1.0.woff2") format("woff2"),
+        url("/fonts/amigafonts/mOsOul_v1.0.ttf") format("truetype");
 }
 
 @font-face {
-  /* 12px */
-  font-family: Galmuri11;
-  font-style: normal;
-  font-stretch: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Galmuri11 Regular'),
-       url('/fonts/galmuri/Galmuri11.woff2') format('woff2'),
-       url('/fonts/galmuri/Galmuri11.ttf') format('truetype');
+    font-family: P0T-NOoDLE;
+    src:
+        local("P0T-NOoDLE"),
+        url("/fonts/amigafonts/P0T-NOoDLE_v1.0.woff2") format("woff2"),
+        url("/fonts/amigafonts/P0T-NOoDLE_v1.0.ttf") format("truetype");
 }
 
 @font-face {
-  /* 12px */
-  font-family: Galmuri11;
-  font-style: bold;
-  font-stretch: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local('Galmuri11 Bold'),
-       url('/fonts/galmuri/Galmuri11-Bold.woff2') format('woff2'),
-       url('/fonts/galmuri/Galmuri11-Bold.ttf') format('truetype');
+    font-family: TopazPlus;
+    src:
+        local("TopazPlus"),
+        url("/fonts/amigafonts/TopazPlus_a1200_v1.0.woff2") format("woff2"),
+        url("/fonts/amigafonts/TopazPlus_a1200_v1.0.ttf") format("truetype");
 }
 
 @font-face {
-  /* 12px */
-  font-family: Galmuri11;
-  font-style: normal;
-  font-stretch: condensed;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Galmuri11 Condensed'),
-       url('/fonts/galmuri/Galmuri11-Condensed.woff2') format('woff2'),
-       url('/fonts/galmuri/Galmuri11-Condensed.ttf') format('truetype');
-}
-
-@font-face {
-  /* 10px */
-  font-family: GalmuriMono9;
-  font-style: normal;
-  font-stretch: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('GalmuriMono9 Regular'),
-       url('/fonts/galmuri/GalmuriMono9.woff2') format('woff2'),
-       url('/fonts/galmuri/GalmuriMono9.ttf') format('truetype');
-}
-
-@font-face {
-  /* 10px */
-  font-family: GalmuriMono9;
-  font-style: normal;
-  font-stretch: normal;
-  font-weight: 700; // hack to remove ugly bold-ing
-  font-display: swap;
-  src: local('GalmuriMono9 Regular'),
-       url('/fonts/galmuri/GalmuriMono9.woff2') format('woff2'),
-       url('/fonts/galmuri/GalmuriMono9.ttf') format('truetype');
-}
-
-@font-face {
-  /* 8px */
-  font-family: GalmuriMono7;
-  font-style: normal;
-  font-stretch: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('GalmuriMono7 Regular'),
-       url('/fonts/galmuri/GalmuriMono7.woff2') format('woff2'),
-       url('/fonts/galmuri/GalmuriMono7.ttf') format('truetype');
+    font-family: Topaz;
+    src:
+        local("Topaz"),
+        url("/fonts/amigafonts/Topaz_a1200_v1.0.woff2") format("woff2"),
+        url("/fonts/amigafonts/Topaz_a1200_v1.0.ttf") format("truetype");
 }

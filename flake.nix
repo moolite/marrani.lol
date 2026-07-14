@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/25.11";
+    nixpkgs.url = "github:nixos/nixpkgs/26.05";
     flakelight.url = "github:nix-community/flakelight";
   };
   outputs =
@@ -10,8 +10,7 @@
       devShell = pkgs: {
         packages = with pkgs; [
           hugo
-          dart-sass
-          pnpm
+          woff2
         ];
       };
     };

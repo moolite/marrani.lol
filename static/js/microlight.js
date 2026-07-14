@@ -33,11 +33,11 @@
   font-weight: bold;
 }
 .ml-regex, .ml-strings {
-  font-weight: lighter;
   font-style: italic;
 }
 .ml-comments {
   font-style: italic;
+  font-weight: 300;
   opacity: 0.6;
 }
 .ml-punctuation {
