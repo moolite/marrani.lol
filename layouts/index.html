@@ -1,13 +1,9 @@
 {{ define "main" }} {{ .Content }}
 
-<ul class="tags">
+<nav class="tags">
   {{ range .Site.Taxonomies.tags }}
-  <li>
-    <a data-count="{{.Count}}" href="{{ .Page.Permalink }}"
-      >{{ .Page.Title }}</a
-    >
-  </li>
+  <a data-count="{{.Count}}" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
   {{ end }}
-</ul>
+</nav>
 
 {{ partial "post_list.html" (dict "context" . "section" .Section)}} {{ end }}

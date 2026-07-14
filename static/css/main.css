@@ -3,7 +3,7 @@
 :root {
     /* C64 (VIC-II) pepto palette */
     --c0: #000000; /* black        */
-    --c1: #fefefe; /* white        */
+    --c1: #f0f0f0; /* white        */
     --c2: #68372b; /* red          */
     --c3: #70a4b2; /* cyan         */
     --c4: #6f3d86; /* purple       */
@@ -28,7 +28,7 @@
 
     --font-s-mono: 13px;
     --font-s-s: 7px;
-    --font-s-n: calc(var(--font-s-s) * 2);
+    --font-s-n: calc(var(--font-s-s) * 3);
     --font-s-p-n: calc(10px * 2);
     --font-s-p-l: calc(10px * 2);
     --font-s-p-xl: calc(10px * 3);
@@ -63,9 +63,12 @@
         --background-main: var(--c2);
         --background-alt: var(--c1);
         --background-inputs: var(--c1);
-        --text: var(--c3);
+        --text: var(--c1);
         --border: var(--c1);
-        --links: var(--ce);
+        --links: var(--ca);
+        --links-visited: var(--c8);
+        --links-hover: var(--c4);
+        --links-active: var(--cf);
         --focus-highlight: var(--cf);
         --shadow-color: var(--c1);
         --shadow-box: 2px 2px 0px var(--border), -2px -2px 0px var(--border);
