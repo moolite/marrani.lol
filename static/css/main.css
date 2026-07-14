@@ -19,7 +19,7 @@
     --ce: #6c5eb5; /* light blue   */
     --cf: #959595; /* light grey   */
 
-    --font-normal: "TopazPlus", serif;
+    --font-normal: "Casio FX 9860gii", serif; /* "TopazPlus" */
     --font-mono: Topaz, monospace;
     --font-pixel: "P0T-NOoDLE";
     --font-pixel-alt: "MicroKnightPlus";
@@ -27,7 +27,7 @@
     --font-pixel-sml: "ZX Sierra Quest";
 
     --font-s-mono: 13px;
-    --font-s-s: 9px;
+    --font-s-s: 7px;
     --font-s-n: calc(var(--font-s-s) * 2);
     --font-s-p-n: calc(10px * 2);
     --font-s-p-l: calc(10px * 2);
@@ -159,7 +159,7 @@ article nav {
 }
 article h1:first-child {
     margin-bottom: 1em;
-    animation: textflicker 0.01s infinite;
+    animation: textflicker 0.1s infinite;
 }
 
 body {
@@ -333,7 +333,9 @@ nav.tags a {
     -khtml-user-select: none;
 }
 
-/* CRT */
+/* CRT
+ * credits: https://aleclownes.com/2017/02/01/crt-display.html
+ */
 .crt::before {
     content: " ";
     display: block;
@@ -426,9 +428,9 @@ nav.tags a {
     }
 }
 
-/**/
+/* microlight.js */
 .ml-keyword {
-    text-shadow: 0 0 1px;
+    font-weight: 600;
     color: var(--ce);
 }
 .ml-regex,
