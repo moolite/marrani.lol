@@ -18,6 +18,8 @@
   {{ end }}
 
   <link rel="shortcut icon" type="image/x-icon" href="{{ $.Site.Params.favicon | relURL }}">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/fonts/galmuri/galmuri.css">
   <link rel="stylesheet" href="/css/main.css">
   {{ if .Params.mathjax }} {{ partial "mathjax.html" . }} {{ end }}
 </head>

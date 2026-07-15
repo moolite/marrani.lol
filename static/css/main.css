@@ -1,5 +1,3 @@
-@import "/fonts/fonts.css";
-
 :root {
     /* C64 (VIC-II) pepto palette */
     --c0: #000000; /* black        */
@@ -19,7 +17,7 @@
     --ce: #6c5eb5; /* light blue   */
     --cf: #959595; /* light grey   */
 
-    --font-normal: "Casio FX 9860gii", serif; /* "TopazPlus" */
+    --font-normal: Galmuri14, serif;
     --font-mono: Topaz, monospace;
     --font-pixel: "P0T-NOoDLE";
     --font-pixel-alt: "MicroKnightPlus";
