@@ -162,7 +162,7 @@ article nav {
 }
 article h1:first-child {
     margin-bottom: 1em;
-    animation: textflicker 0.1s infinite;
+    animation: textflicker 0.05s infinite;
 }
 
 body {
@@ -196,6 +196,17 @@ main section {
 aside {
     font-family: var(--font-pixel-alt);
 }
+
+header {
+    /* sticky sidebar */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: var(--background);
+    padding-block: 4px;
+}
+
 nav.breadcrumbs ul {
     list-style-type: none;
     text-align: center;
@@ -334,6 +345,22 @@ nav.tags a {
 .no-select {
     user-select: none;
     -khtml-user-select: none;
+}
+
+nav#TableOfContents {
+    font-size: var(--font-s-n);
+}
+
+nav#TableOfContents ul {
+    padding-left: 1em;
+}
+
+nav#TableOfContents ul > li > ul {
+    list-style: disc;
+}
+
+nav#TableOfContents ul > li > ul > li > ul {
+    list-style: circle;
 }
 
 /* CRT

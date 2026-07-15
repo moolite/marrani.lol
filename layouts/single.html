@@ -1,9 +1,5 @@
 {{ define "main" }}
-<article>
-  {{ if .Params.toc }} {{ .TableOfContents }} {{ end }}
-  <br />
-  {{ .Content }}
-</article>
+<article>{{ .Content }}</article>
 
 <div class="post-meta">
   <time datetime="{{ .Date }}">

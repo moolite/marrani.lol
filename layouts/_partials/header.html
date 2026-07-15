@@ -30,4 +30,4 @@
   <a class="tag" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
   {{ end }}
 </nav>
-{{ end }}
+{{ end }} {{ if .Params.toc }} {{ .TableOfContents }} {{ end }}
