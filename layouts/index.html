@@ -2,7 +2,9 @@
 
 <nav class="tags">
   {{ range .Site.Taxonomies.tags }}
-  <a data-count="{{.Count}}" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+  <a data-count="{{.Count}}" class="tag" href="{{ .Page.Permalink }}"
+    >{{ .Page.Title }}</a
+  >
   {{ end }}
 </nav>
 

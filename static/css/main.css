@@ -22,7 +22,6 @@
     --font-pixel: "P0T-NOoDLE";
     --font-pixel-alt: "MicroKnightPlus";
     --font-pixel-cur: "Noted";
-    --font-pixel-sml: "ZX Sierra Quest";
 
     --font-s-mono: 13px;
     --font-s-s: 7px;
@@ -102,7 +101,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-pixel-sml);
+    font-family: var(--font-pixel-alt);
 }
 
 ul {
@@ -158,7 +157,7 @@ article p {
 article nav {
     font-size: var(--font-s-s);
 }
-article h1:first-child {
+section h1:first-child {
     margin-bottom: 1em;
     animation: textflicker 0.05s infinite;
 }
@@ -231,10 +230,14 @@ nav.breadcrumbs ul > li > a:hover::before {
     opacity: 1;
 }
 
-nav.tags a {
+a.tag {
+    font-family: var(--font-pixel-alt);
     font-variant: all-small-caps;
     font-style: italic;
     font-weight: bold;
+}
+a.tag:before {
+    content: "#";
 }
 
 .post-meta {
@@ -262,22 +265,6 @@ nav.tags a {
 .blink {
     animation: blink-animation 1s steps(5, start) infinite;
     -webkit-animation: blink-animation 1s steps(5, start) infinite;
-}
-
-.tag-list {
-    font-size: var(--font-s-ss);
-    font-family: var(--font-pixel-cur);
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-bottom: 1px solid var(--background-main);
-}
-
-.tag-list a::before {
-    content: "#";
-    opacity: 0;
-}
-.tag-list a:hover::before {
-    opacity: 1;
 }
 
 .reaction-button {
@@ -309,6 +296,13 @@ nav.tags a {
 }
 .preview .tag-list a {
     font-size: var(--font-s-ss);
+}
+
+.posts {
+    font-weight: bold;
+}
+.posts time {
+    font-family: var(--font-pixel-alt);
 }
 
 .scanlines::before {

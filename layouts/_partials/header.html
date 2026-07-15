@@ -1,4 +1,5 @@
 {{ with .Title }}
+
 <h6><a href="{{ $.Permalink }}">{{ . }}</a></h6>
 {{ end }} {{- if $.Site.Params.show_description -}}
 <quote>
@@ -27,7 +28,7 @@
 {{ with $.GetTerms "tags" }}
 <nav class="tags">
   {{ range . }}
-  <a class="tag" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
+  <a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
   {{ end }}
 </nav>
 {{ end }} {{ if .Params.toc }} {{ .TableOfContents }} {{ end }}
