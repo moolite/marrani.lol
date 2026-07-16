@@ -23,9 +23,9 @@
     --font-pixel-alt: "MicroKnightPlus";
     --font-pixel-cur: "Noted";
 
-    --font-s-mono: 13px;
-    --font-s-s: 7px;
-    --font-s-n: calc(var(--font-s-s) * 3);
+    --font-s-mono: 10px;
+    --font-s-s: 16px;
+    --font-s-n: calc(var(--font-s-s) * 1);
     --font-s-p-n: calc(10px * 2);
     --font-s-p-l: calc(10px * 2);
     --font-s-p-xl: calc(10px * 3);

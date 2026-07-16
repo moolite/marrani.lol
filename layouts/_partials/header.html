@@ -14,15 +14,7 @@
     >{{ .Name }}</a
   >
   {{- end }}
-
-  <a
-    href=""
-    onclick="
-      document.body.classList.toggle('crt');
-      return false;
-    "
-    >CRT</a
-  >
+  <a href="" class="crt-toggle">CRT</a>
 </nav>
 
 {{ with $.GetTerms "tags" }}
